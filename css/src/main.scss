@@ -1,6 +1,14 @@
-$accent-color: salmon;
+@import 'vars';
+@import 'fonts';
+@import 'normalize';
 
 body {
-	background-color: #000;
+	background-color: #fff;
 	color: $accent-color;
 }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $title;
+}
+
+@import 'media';

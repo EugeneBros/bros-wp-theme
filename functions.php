@@ -4,12 +4,12 @@ add_action( 'wp_enqueue_scripts', 'theme_scripts' );
 
 function theme_scripts() {
 //  Adding styles
-  wp_enqueue_style( 'libs-styles', get_template_directory_uri() . '/app/css/libs.min.css' );
-  wp_enqueue_style( 'style-css', get_template_directory_uri() . '/app/css/main.min.css' );
+  wp_enqueue_style( 'libs-styles', get_template_directory_uri() . '/css/libs.min.css' );
+  wp_enqueue_style( 'style-css', get_template_directory_uri() . '/css/main.min.css' );
 
 //  Adding scripts
-  // wp_enqueue_script( 'libs-scripts', get_template_directory_uri() . '/src/js/libs.min.js', array(), '1.0.0', true );
-  wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/app/js/scripts.min.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'libs-scripts', get_template_directory_uri() . '/js/libs.min.js', array(), '1.0.0', true );
+  wp_enqueue_script( 'main-scripts', get_template_directory_uri() . '/js/common.min.js', array(), '1.0.0', true );
 }
 
 // Enable svg
